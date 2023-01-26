@@ -1,3 +1,5 @@
+const fs = require('fs');
+
   function addHtml(member) {
     return new Promise(function(resolve, reject) {
         const name = member.getName();
@@ -53,7 +55,7 @@
       </div>`;
         }
         console.log("adding team member");
-        fs.appendFile("./output/team-profile.html", data, function (err) {
+        fs.appendFile("./dist/team-profile.html", data, function (err) {
             if (err) {
                 return reject(err);
             };

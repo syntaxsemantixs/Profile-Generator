@@ -1,8 +1,8 @@
-const inquirer = require('inquirer');
+const inquirer = require("inquirer");
 const fs = require('fs');
 const Manager = require('./lib/Manager.js')
 const Engineer = require('./lib/Engineer.js')
-const Intern = require('./lib/Intern.js')
+// const Intern = require('./lib/Intern.js')
 const startHtml = require('./src/starthtml.js')
 const addHtml = require('./src//addhtml.js')
 const finishHtml = require('./src/finishtml.js')
@@ -10,10 +10,10 @@ const finishHtml = require('./src/finishtml.js')
 
 const employees = [];
 
-function initialize() {
-  startHtml();
-  chooseProfile();
-}
+// function initialize() {
+//   startHtml();
+//   chooseProfile();
+// }
 
 
 function chooseProfile() {
@@ -87,7 +87,7 @@ function chooseProfile() {
         addHtml(addMember)
         .then(function() {
             if (addmembers === "yes") {
-                addMember();
+                chooseProfile();
             } else {
                 finishHtml();
             }
@@ -96,6 +96,11 @@ function chooseProfile() {
     });
 });
 }
+function initialize() {
+  startHtml();
+  chooseProfile();
+}
+
 initialize();
 
 
