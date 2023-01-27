@@ -15,7 +15,7 @@
   - [Additional Info](#additional-info)
   - [Questions](#questions)
   ## Installation:
-  Node will be necesary to run this. In terminal in node run npm init -y followed by pm install --save inquirer@^8.0.0 . For tests you will need to change the test in the scripts in the  package.json file to "jest".
+  Node will be necesary to run this. In terminal in node run npm init -y followed by pm install --save inquirer@^8.0.0 . For tests you will need to change the test in the scripts in the  package.json file to "jest". Bootstrap was used in the Html files to style.  https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css
   ## Usage:
   [Video](This can be used to quickly create a roster for a team of software engineers or team in general.)
 
@@ -27,7 +27,5 @@
   ## Testing:
   This file has tests built in and if jest runs they should all pass. Running the app can test if it works as well.
   ## Additional Info:
-  - Github: [syntaxsemnatixs](https://github.com/syntaxsemnatixs)
-  ## Questions:
-  
+  - Github: [syntaxsemnatixs](https://github.com/syntaxsemnatixs) 
 
