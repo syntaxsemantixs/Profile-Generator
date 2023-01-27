@@ -2,10 +2,11 @@ const inquirer = require("inquirer");
 const fs = require('fs');
 const Manager = require('./lib/Manager.js')
 const Engineer = require('./lib/Engineer.js')
-// const Intern = require('./lib/Intern.js')
+const Intern = require('./lib/Intern.js')
 const startHtml = require('./src/starthtml.js')
 const addHtml = require('./src//addhtml.js')
-const finishHtml = require('./src/finishtml.js')
+const finishHtml = require('./src/finishtml.js');
+const Employee = require("./lib/Employee.js");
 
 
 const employees = [];
@@ -28,8 +29,8 @@ function chooseProfile() {
       name: 'role',
       message: 'What is your team members role?',
       choices: [
-        "Intern",
         "Employee",
+        "Intern",
         "Manager",
         "Engineer"
       ]
@@ -51,13 +52,11 @@ function chooseProfile() {
         addInfo = "GitHub username";
     } else if (role === "Intern") {
         addInfo = "school name";
-    } else if (role === "Manager") {
-        addInfo = "office phone number";
     } else {
-
+        addInfo = "office phone number";
     }
     inquirer.prompt([{
-        message: `What is the team member's ${addInfo}`,
+        message: `What is the team member's ${addInfo} ?`,
         name: "addInfo"
     },
     {
@@ -80,8 +79,8 @@ function chooseProfile() {
         } else if (role === "Manager") {
           addMember = new Manager(name, id, email, addInfo)
 
-        } else {
-            addMember = new Manager(name, id, email, addInfo);
+        } else if (role === "Employee") {
+            addMember = new Employee(name, id, email, addInfo);
         }
         employees.push(addMember);
         addHtml(addMember)

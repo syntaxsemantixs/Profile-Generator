@@ -11,7 +11,7 @@ describe("Manager", () => {
         it(' should get the Role from the getRole() method', () => {
             const manager = new Manager('Gerardo', 123456789, 'gerardo1234@gmail.com', 123);
 
-            expect(manager.getEmail()).toBe("Manager");
+            expect(manager.getRole()).toBe("Manager");
         });
     })
 });

@@ -43,10 +43,10 @@ const fs = require('fs');
             </ul>
             </div>
         </div>`
-        } else {
+        } else if (role === "Employee") {
           data = `<div class="col-6">
           <div class="card mx-auto mb-3" style="width: 18rem">
-          <h5 class="card-header">${name}<br /><br />Intern</h5>
+          <h5 class="card-header">${name}<br /><br />Employee</h5>
           <ul class="list-group list-group-flush">
               <li class="list-group-item">ID: ${id}</li>
               <li class="list-group-item">Email Address: ${email}</li>
