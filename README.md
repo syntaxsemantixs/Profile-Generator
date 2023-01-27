@@ -13,11 +13,11 @@
   - [Contribution](#contribution)
   - [Testing](#testing)
   - [Additional Info](#additional-info)
-  - [Questions](#questions)
+
   ## Installation:
-  Node will be necesary to run this. In terminal in node run npm init -y followed by pm install --save inquirer@^8.0.0 . For tests you will need to change the test in the scripts in the  package.json file to "jest". Bootstrap was used in the Html files to style.  https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css
+  Node will be necesary to run this. In terminal in node run " npm init -y " followed by " npm install --save inquirer@^8.0.0 " . For tests you will need to change the test in the scripts in the  package.json file to "jest". Bootstrap was used in the Html files to style.  https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css
   ## Usage:
-  [Video](This can be used to quickly create a roster for a team of software engineers or team in general.)
+  [Video](https://drive.google.com/file/d/1kRkvHqb3hdormJJQEJ6N5w7LnhmV51jK/view)
 
   ## License
     This application is covered by the MIT license.
